@@ -1,10 +1,11 @@
-# Title
+# Giphy API
 
-#### **Date**
+#### **Date:** 11.16.2020
 
-## By _Callie Stump_
+## By _Svea Wade, David Sterry, & Callie Stump_
 ---
 ## **Description**
+This project creates a GIF application that allows users to search for GIFs, view trending content, & even upload personalized content!
 
 
 ## **Setup**
@@ -12,30 +13,34 @@
 2. Open bash and go to the directory where you would like to store your cloned project.
 3. Clone the repo.
 ```
-git clone ""
-```
-4. Navigate to the cloned project folder and open VS code.
-```
 $ cd Desktop
 $ cd [known directory]
 $ code .
 ```
-#### Dont forget that in order to push any changes you need to add your own GitHub repo. to your project.
 ```
-git remote add origin [repo. link]
+git clone "https://github.com/calliestump/gif.git"
+```
+
+4. Navigate to the cloned project folder and open VS code.
+5. Go to https://developers.giphy.com/docs/api/
+6. Create an App, login, copy the API key into the appropriate spot in the main.js file.
+#### **Do not** forget that in order to push any changes you need to add your own GitHub repo. to your project.
+```
+git remote add origin https://github.com/calliestump/gif
 ```
 ## Known Bugs
 There are no bugs at this time.
 ## Support/Contact Details
 If you have any questions regarding this project feel free to contact me: callie@stu.mp
 ## **Technologies Used**
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* HTML
+* CSS
+* javaScript
+* GIT
+* GitHub
+* Webpack
+* API
+* JSON
 
 ## **Specs**
 
@@ -51,4 +56,4 @@ Expect
 ```
 
 ## Legal
-Copyright (c) 2020 Callie Stump
+Copyright (c) 2020 Svea Wade, David Sterry, & Callie Stump
