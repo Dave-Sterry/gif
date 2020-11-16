@@ -1,15 +1,14 @@
 import $ from "jquery";
 import "./css/styles.css";
 import "bootstrap";
-// import Method from "./method.js";
 
 $(document).ready(function() {
-  $("form#").submit(function(event) {
-    event.preventDefault();
+  $("#gifSearch").click(function() {
     const userSearch = $("#userSearch").val();
+    $("#userSearch").val("");
 
     let request = new XMLHttpRequest();
-    const url = `http://api.giphy.com/v1/gifs/search?q=${userSearch}&api_key=l9wbr3917CHeTuV3nddAriQ7oRdk92ra&limit=5`
+    const url = `https://api.giphy.com/v1/gifs/search?q=${userSearch}&api_key=l${process.env.API_KEY}`;
 
     request.onreadystatechange = function () {
       if (this.readystate === 4 && this.status === 200) {
@@ -19,5 +18,11 @@ $(document).ready(function() {
     };
     request.open("GET", url, true);
     request.send();
+
+    function getElements(response) {
+      $(".showGifs").show(`Here's your gif ${userSearch} : ${response.data[0].images}`);
+    }
   });
 });
+
+
