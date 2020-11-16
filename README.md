@@ -20,14 +20,14 @@ $ cd Desktop
 $ cd [known directory]
 $ code .
 ```
-## Known Bugs
-There are no bugs at this time.
-## Support/Contact Details
-If you have any questions regarding this project feel free to contact me: callie@stu.mp
 #### Dont forget that in order to push any changes you need to add your own GitHub repo. to your project.
 ```
 git remote add origin [repo. link]
 ```
+## Known Bugs
+There are no bugs at this time.
+## Support/Contact Details
+If you have any questions regarding this project feel free to contact me: callie@stu.mp
 ## **Technologies Used**
 * 
 * 
